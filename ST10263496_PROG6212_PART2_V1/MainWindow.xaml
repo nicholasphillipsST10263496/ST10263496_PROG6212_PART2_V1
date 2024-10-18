@@ -1,0 +1,28 @@
+﻿<Window x:Class="ST10263496_PROG6212_PART2_V1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Claim Submission" Height="350" Width="525">
+    <StackPanel Margin="10">
+        <Grid Margin="0,10,0,0">
+            <TextBox x:Name="LecturerNameTextBox" TextChanged="LecturerNameTextBox_TextChanged" />
+            <Label Content="Lecturer Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" x:Name="LecturerNamePlaceholder" Visibility="Visible" />
+        </Grid>
+        <Grid Margin="0,10,0,0">
+            <TextBox x:Name="HoursWorkedTextBox" TextChanged="HoursWorkedTextBox_TextChanged" />
+            <Label Content="Hours Worked" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" x:Name="HoursWorkedPlaceholder" Visibility="Visible" />
+        </Grid>
+        <Grid Margin="0,10,0,0">
+            <TextBox x:Name="HourlyRateTextBox" TextChanged="HourlyRateTextBox_TextChanged" />
+            <Label Content="Hourly Rate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" x:Name="HourlyRatePlaceholder" Visibility="Visible" />
+        </Grid>
+        <Grid Margin="0,10,0,0">
+            <TextBox x:Name="DocumentPathTextBox" TextChanged="DocumentPathTextBox_TextChanged" IsReadOnly="True"/>
+            <Label Content="Document Path" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" x:Name="DocumentPathPlaceholder" Visibility="Visible" />
+        </Grid>
+        <!-- Button to upload document -->
+        <Button x:Name="UploadDocumentButton" Content="Upload Document" Click="UploadDocumentButton_Click" Margin="0,10,0,0"/>
+        <Button x:Name="SubmitClaimButton" Content="Submit Claim" Click="SubmitClaimButton_Click" Margin="0,10,0,0"/>
+        <!-- New Sign Out button -->
+        <Button x:Name="SignOutButton" Content="Sign Out" Click="SignOutButton_Click" Margin="0,10,0,0"/>
+    </StackPanel>
+</Window>
